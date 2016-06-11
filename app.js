@@ -38,7 +38,7 @@ app.get('/process_get', function (req, res) {
     txtFirstName:req.query.txtFirstName,
     txtLastName:req.query.txtLastName  ,
     numHhold:req.query.numHhold,
-    numSalary:req.query.numSalary,
+    numSalary: req.query.numSalary
     // txtZipCode:req.query.txtZipCode
   };
   console.log(response);
@@ -153,7 +153,7 @@ app.post('/post', function (req, res) {
 
 });
 
-
+/* test */
 /* app.post('/',function(req,res){
  var numHhold=req.body.numHhold;
  var numSalary=req.body.numSalary;
