@@ -39,7 +39,7 @@ app.get('/process_get', function (req, res) {
     txtLastName:req.query.txtLastName  ,
     numHhold:req.query.numHhold,
     numSalary:req.query.numSalary,
-    txtZipCode:req.query.txtZipCode
+    // txtZipCode:req.query.txtZipCode
   };
   console.log(response);
   res.end(JSON.stringify(response));
@@ -143,12 +143,12 @@ app.post('/post', function (req, res) {
   }
 
   console.log(maxSalLimit[0]);
-  if (numSalary < maxSalLimit[0]) {
-    console.log("Congratulations! You are eligible to apply for the affordable housing program");
-    res.end("Congratulations! You are eligible to apply for the affordable housing program");
+  if (lodash.toSafeInteger(numSalary) < lodash.toSafeInteger(maxSalLimit[0])) {
+    console.log("Congratulations! You are eligible to apply for the affordable housing program. Your sum annual salary = " + numSalary + "and the max limit for eligibility=" + maxSalLimit[0]);
+    res.end("Congratulations! You are eligible to apply for the affordable housing program. Your sum annual salary = " + numSalary + " and the max limit for eligibility=" + maxSalLimit[0]);
   } else {
-    console.log("Sorry!");
-    res.end("Sorry!");
+    console.log("Sorry! You are not eligible for the affordable housing program! Your total household annual salary = " + numSalary + " and the max salary limit = " + maxSalLimit);
+    res.end("Sorry! You are not eligible for the affordable housing program! Your total household annual salary = " + numSalary + " and the max salary limit = " + maxSalLimit[0]);
   }
 
 });
