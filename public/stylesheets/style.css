@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1, h2, h3, h4, p, ul, ol {
+  line-height: 150%;
+  text-transform: none;
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2.0em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.2em;
+}
+p, li {
+  font-size: 1em;
+}
+ul li {
+  list-style: none;
+}
+main {
+  padding: 35px 0;
+}
+article section {
+  padding: 35px;
+}
+header .container {
+  /*background: #5FBB97;*/
+}
+header h1 {
+  color: #cf1b41;
+}
+section {
+  padding-top: 35px;
+}
+.border-right {
+  border-right: 6px solid #646464;
+}
+.border-left {
+  border-left: 6px solid #646464;
+}
+.btn-princeton {
+  background: #4048b9;
+  color: #ffffff;
+  font-weight: bold;
+}
+.btn-princeton:hover,
+.btn-princeton:active {
+  background: #ffffff;
+  border: 1px solid #4048b9;
+}
+/*.capabilities li {*/
+  /*display: inline;*/
+/*}*/
+.capabilities img {
+  padding: 0 0 20px 0;
+}
+form {
+  margin: 25px;
+}
+dd {
+  margin-bottom: 25px;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  padding: 4px 8px;
+}
+figure .side-image {
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  header .intro-text .name {
+    font-size: 3.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  main p {
+    text-align: justify;
+  }
+  section h2 {
+    font-size: 1.5em;
+  }
+  figure .side-image {
+    margin: 20px auto;
+
+  }
+}
