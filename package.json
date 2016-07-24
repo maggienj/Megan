@@ -16,6 +16,6 @@
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0" ,
     "lodash": "~4.4.0" ,
-    "underscore.js": "~1.7.0"
+    "underscore": "~1.7.0"
   }
 }
