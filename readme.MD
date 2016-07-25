@@ -1,7 +1,7 @@
 
-<h1> Fork this Prince_housing repository and the Megan Repository to start building on top of it <br> </h1>
+<h1> Fork this  Megan Repository to start building on top of it <br> </h1>
 -- Megan rep --https://github.com/maggienj/Megan <br> 
--- Prince_housing --https://github.com/maggienj/Prince_housing <br>
+-- Prince_housing --https://github.com/maggienj/Prince_housing <br> ( this is a previous version v0.1... using node and angular )
 
 To run prince_housing app follow these steps: <br>  First of all fork it.... <br>
 To run the app locally: <br> 
