@@ -3,6 +3,11 @@
 -- Megan rep --https://github.com/maggienj/Megan <br> 
 -- Prince_housing --https://github.com/maggienj/Prince_housing <br> ( this is a previous version v0.1... using node and angular )
 
+To run Megan app folow these steps: <br>
+1. Fork Megan Repository
+2. Open web app in Jetbrains IDE (or any preferred IDE) 
+3. Run app
+
 To run prince_housing app follow these steps: <br>  First of all fork it.... <br>
 To run the app locally: <br> 
 0. Make sure"npm install -g" inside /Prince_housing <br>
