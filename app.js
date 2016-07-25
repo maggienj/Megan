@@ -1,8 +1,8 @@
 var express = require('express');
-var port = process.env.port || 8080; // 8080 for local or whatever number u want
-var listener = app.listen(port, function(){
-    console.log('Listening on port ' + port); 
-});
+// var port = process.env.port || 8080; // 8080 for local or whatever number u want
+// var listener = app.listen(port, function(){
+//     console.log('Listening on port ' + port); 
+// });
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
