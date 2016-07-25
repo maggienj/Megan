@@ -15,9 +15,9 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || '3000');
 // var port = process.env.port || 8080; // 8080 for local or whatever number u want
-var listener = app.listen(port, function(){
-    console.log('Listening on port ' + port); 
-});
+// var listener = app.listen(port, function(){
+//     console.log('Listening on port ' + port); 
+// });
 app.set('port', port);
 
 /**
