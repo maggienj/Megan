@@ -99,3 +99,7 @@ http://www.princetonnj.gov/affordable/AffordableHousing_Application.pdf
 
 
 
+Aug 27 update:
+We have received the pdf forms from Melissa, but they were scanned paper forms.
+We have requested for the actual digital pdf form so that we could create fields and auto populate the values form html form
+
