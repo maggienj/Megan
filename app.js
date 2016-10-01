@@ -15,6 +15,11 @@ var lodash = require('lodash');
 
 var app = express();
 
+var port = process.env.port || 8080; // 8080 for local or whatever number u want
+var listener = app.listen(port, function(){
+  console.log('Listening on port ' + port);
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
