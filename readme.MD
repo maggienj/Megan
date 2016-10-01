@@ -4,19 +4,19 @@
 -- Prince_housing --https://github.com/maggienj/Prince_housing <br> ( this is a previous version v0.1... using node and angular )
 
 To run Megan app follow these steps: <br>
-1. Fork Megan Repository
-2. Open web app in Jetbrains IDE (or any preferred IDE)
-3. Run app
+1. Fork Megan Repository <br>
+2. Open web app in Jetbrains IDE (or any preferred IDE) <br>
+3. Run app <br>
 
 To run the Megan app using Atom as your preferred editor: <br>
-1. Fork the Megan repository to your personal github account
-2. Clone your copy of the Megan repository to your dev machine
-3. Make sure you have npm installed on your machine
+1. Fork the Megan repository to your personal github account <br>
+2. Clone your copy of the Megan repository to your dev machine <br>
+3. Make sure you have npm installed on your machine <br>
 4. Install 'express.js' by running <code>npm install express -g</code> inside the /Megan folder from a terminal. <br>
-5. Also inside the /Megan folder, run <code>npm install</code>
+5. Also inside the /Megan folder, run <code>npm install</code> <br>
 6. In the same folder, run: <code>node app.js</code> <br>
 7. Open a web browser to <code>http://localhost:8080</code> and start coding!<br>
-
+<br>
 <br>
 ** Affordable Housing Project **
 > -- using the code for America template <br>
