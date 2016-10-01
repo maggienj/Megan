@@ -1,7 +1,7 @@
 var express = require('express');
 // var port = process.env.port || 8080; // 8080 for local or whatever number u want
 // var listener = app.listen(port, function(){
-//     console.log('Listening on port ' + port); 
+//     console.log('Listening on port ' + port);
 // });
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -18,6 +18,10 @@ var qualify = require('./routes/qualify');
 var lodash = require('lodash');
 
 var app = express();
+ var port = process.env.port || 8080; // 8080 for local or whatever number u want
+ var listener = app.listen(port, function(){
+     console.log('Listening on port ' + port);
+ });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
