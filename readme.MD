@@ -1,4 +1,11 @@
 
+Technical architecture includes node.js , express framework along with ejs. Lodash.js is also being used. <br>
+Website is currently hosted in Microsoft Azure Portal with continuous integration on.<br>
+<br>
+Url : http://affordable.azurewebsites.net
+<br>
+
+
 <h1> Fork this  Megan Repository to start building on top of it <br> </h1>
 -- Megan rep --https://github.com/maggienj/Megan <br>
 -- Prince_housing --https://github.com/maggienj/Prince_housing <br> ( this is a previous version v0.1... using node and angular )
