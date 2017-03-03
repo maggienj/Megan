@@ -11,7 +11,6 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
 var qualify = require('./routes/qualify');
-var decision = require('./routes/decision');
 
 var lodash = require('lodash');
 
@@ -40,7 +39,6 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/about', about);
 app.use('/qualify', qualify);
-app.use('/decision', decision);
 
 app.get('/process_get', function (req, res) {
   // Prepare output in JSON format
