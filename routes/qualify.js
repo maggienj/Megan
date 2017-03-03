@@ -96,7 +96,7 @@ router.post('/', function (req, res) {
     default:
       maxSalLimit = '0';
   }
-  // This route receives the posted form.
+// This route receives the posted form.
 // As explained above, usage of 'body-parser' means
 // that `req.body` will be filled in with the form elements
 

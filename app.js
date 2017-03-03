@@ -56,7 +56,7 @@ app.get('/process_get', function (req, res) {
 
 
 
- // var myFilteredData  = lodash.filter(myData, function(c) {
+ //  var myFilteredData  = lodash.filter(myData, function(c) {
   // return Type = "Moderate";
 //});
 
