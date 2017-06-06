@@ -63,11 +63,11 @@ The next step is to move that section of code to "qualify" page and set that as 
 * Fork this repository to your github repo and start working on each and every step<br>
 -- Task#1 -- Move the section of code related to lodash and lookup data json parsing to "qualify" page.
 <br>
------- Status --
+------ Status -- as of Mar 3, 2017 - completed by Sunita.
 <br> <br>
 -- Task#2 -- Get the submit button working in "qualify" page.
 <br>
------- Status --
+------ Status -- as of Mar 3, 2017 - completed by Sunita
 <br><br>
 -- Task#3 -- Instead of Zip code, add the county name in a pul down list.  List only Mercer , Monmouth and Ocean county names.
 <br>
@@ -79,7 +79,7 @@ The next step is to move that section of code to "qualify" page and set that as 
 <br> <br>
 -- Task#5 -- Once the submit button in "qualify page" is clicked, it should lookup the json file and output the result as "You are eligible for Affordable Housing in Princeton" or .......
 <br>
------- Status --
+------ Status -- 
 <br> <br>
 --
 --
