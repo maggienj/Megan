@@ -16,10 +16,10 @@ var lodash = require('lodash');
 var app = express();
 
 // these four lines commented by Maggie on Dec -2 for config testing purposes - for azure portal 
-var port = process.env.port || 8080; // 8080 for local or whatever number u want
+/*var port = process.env.port || 8080; // 8080 for local or whatever number u want
 var listener = app.listen(port, function(){
   console.log('Listening on port ' + port);
-});
+});*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
