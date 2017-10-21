@@ -11,6 +11,8 @@ var users = require('./routes/users');
 var about = require('./routes/about');
 var qualify = require('./routes/qualify');
 var post_eligibility = require('./routes/post_eligibility');
+var pdf = require('./routes/pdf');
+var fillOutPdf = require('./routes/fillOutPdf');
 
 var lodash = require('lodash');
 
@@ -39,6 +41,8 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/about', about);
 app.use('/post_eligibility', post_eligibility);
+app.use('/pdf', pdf);
+app.use('/fillOutPdf', fillOutPdf);
 
 app.get('/process_get', function (req, res) {
   // Prepare output in JSON format
