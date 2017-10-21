@@ -22,25 +22,26 @@ headers.each do |h|
 end
 
 real_headers = headers.slice(1, headers.count)
-all_fields = fields[headers[0]]
-specific_fields = {}
-real_headers.map do |h|
- 	specific_fields[h] = fields[h] - all_fields
-end
-
+all_fields = fields[headers[0]].uniq
 common_fields = all_fields
+puts "\n\n\nDETERMINING COMMON FIELDS"
 real_headers.map do |h|
-	common_fields -= specific_fields[h]
+	common_fields &= fields[h]
 end
 common_fields.flatten!
 
+specific_fields = {}
+real_headers.map do |h|
+ 	specific_fields[h] = fields[h] - common_fields
+end
+
 CSV.open("common_and_specific_fields.csv", "w+") do |csv|
 	csv << ["Common Fields"]
-	csv << common_fields.uniq
+	csv << common_fields.uniq.sort
 	specific_fields.keys.each do |k|
 		csv << []
 		csv << []
 		csv << [k]
-		csv << specific_fields[k].uniq
+		csv << specific_fields[k].uniq.sort
 	end
 end
