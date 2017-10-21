@@ -26,20 +26,38 @@
                     </figure>
                 </div>
                 <div class="col-xs-12 col-sm-7 pull-left">
-                    <p>Fill the below info to check if you are qualified to join the program!</p>
-                    <form action="/qualify" method="POST">
+                    <p>Please fill in the below info</p>
+                    <form action="/pdf" method="POST">
                         <dl>
+                            <dt><label for="name">Name</label></dt>
+                            <dd><input type="text" id="name" name="name" /></dd>
+
                             <dt><label for="address">Address</label></dt>
                             <dd><input type="text" id="address" name="address" /></dd>
 
-                            <dt><label for="city">City</label></dt>
-                            <dd><input type="number" id="city" name="city" /></dd>
+                            <dt><label for="state">State</label></dt>
+                            <dd><input type="text" id="state" name="state" /></dd>
 
-                            <dt><label for="cell">Cell Phone</label></dt>
+                            <dt><label for="city">City</label></dt>
+                            <dd><input type="text" id="city" name="city" /></dd>
+
+                            <dt><label for="zip">Zip</label></dt>
+                            <dd><input type="text" id="zip" name="zip" /></dd>
+
+                            <dt><label for="home">Home phone</label></dt>
+                            <dd><input type="text" id="home" name="home" /></dd>
+
+                            <dt><label for="work">Work phone</label></dt>
+                            <dd><input type="text" id="work" name="work" /></dd>
+
+                            <dt><label for="cell">Cell phone</label></dt>
                             <dd><input type="text" id="cell" name="cell" /></dd>
-                            
+
+                            <dt><label for="email">Email</label></dt>
+                            <dd><input type="text" id="email" name="email" /></dd>
                         </dl>
-                        <input class="btn btn-princeton" href="./qualify" type="submit" value="Check My Eligibility">
+                        <% include templates/member.ejs %>
+                        <input class="btn btn-princeton" href="./pdf" type="submit" value="Submit Information">
                     </form>
                 </div>
             </div>

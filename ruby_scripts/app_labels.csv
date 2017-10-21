@@ -1,0 +1,138 @@
+All Possible Fields,Field Labels
+address,Address
+,
+applicantSignature,Applicant's signature
+applicantSignatureDate,Date signed
+assetAccountType1,Account Type 
+assetAccountType2,Account Type 
+assetAccountType3,Account Type 
+assetAccountType4,Account Type 
+assetAmount1,Asset 1 (Dollar value)
+assetAmount2,Asset 2 (Dollar value)
+assetAmount3,Asset 3 (Dollar value)
+assetAmount4,Asset 4 (Dollar value)
+cell,Cell
+city,City
+,
+,
+coApplicantDate,Date signed
+coApplicantSignature,Co-Applicant's signature
+coApplicantSignature1,Co-Applicant's signature
+coApplicantSignature2,Co-Applicant's signature
+coApplicantSignatureDate,Date signed
+coApplicantSignatureDate1,Date signed
+coApplicantSignatureDate2,Date signed
+creditCardName1,Credit Card Name
+creditCardName2,Credit Card Name
+creditCardName3,Credit Card Name
+creditCardName4,Credit Card Name
+driversLicenseNumber1,Driver's License Number
+driversLicenseNumber2,Driver's License Number
+driversLicenseNumber3,Driver's License Number
+driversLicenseState1,State
+driversLicenseState2,State
+driversLicenseState3,State
+email,E-Mail
+extraIncomeAmount1,Extra Income ($)
+extraIncomeAmount2,Extra Income ($)
+extraIncomeAmount3,Extra Income ($)
+extraIncomeAmount4,Extra Income ($)
+extraIncomeFrequency1,per
+extraIncomeFrequency2,per
+extraIncomeFrequency3,per
+extraIncomeFrequency4,per
+extraIncomeSource1,Source
+extraIncomeSource2,Source
+extraIncomeSource3,Source
+extraIncomeSource4,Source
+hasAsianPacificEthnicity,Asian/Pacific
+hasBlackEthnicity,Black
+hasBothPreference,Both
+hasBuyPreference,Buy
+hasIndianAsianEthnicity,Indian/Asian
+hasIslanderEthnicity,Islander
+hasntSexOffense,No
+hasntSpecialNeeds,No
+hasOtherEthnicity,Other
+hasRentPreference,Rent
+hasSexOffense,Yes
+hasSpecialNeeds,Yes
+hasWhiteEthnicity,White
+isHispanic,Hispanic
+isNonHispanic,Non-Hispanic
+lastPaymentDate1,Last Payment Date
+lastPaymentDate2,Last Payment Date
+lastPaymentDate3,Last Payment Date
+lastPaymentDate4,Last Payment Date
+lenderName1,Lender's Name
+lenderName2,Lender's Name
+lenderName3,Lender's Name
+lenderName4,Lender's Name
+loanBalance1,Loan Balance
+loanBalance2,Loan Balance
+loanBalance3,Loan Balance
+loanBalance4,Loan Balance
+loanType1,Loan Type
+loanType2,Loan Type
+loanType3,Loan Type
+member1,Household member's name
+member2,Household member's name
+member3,Household member's name
+member4,Household member's name
+member5,Household member's name
+member6,Household member's name
+memberDOB1,Date of Birth
+memberDOB2,Date of Birth
+memberDOB3,Date of Birth
+memberDOB4,Date of Birth
+memberDOB5,Date of Birth
+memberDOB6,Date of Birth
+memberEmployer1,Employer
+memberEmployer2,Employer
+memberEmployer3,Employer
+memberEmployer4,Employer
+memberEmployer5,Employer
+memberEmploymentDuration1,Employment Duration
+memberEmploymentDuration2,Employment Duration
+memberEmploymentDuration3,Employment Duration
+memberEmploymentDuration4,Employment Duration
+memberEmploymentDuration5,Employment Duration
+memberGrossAnnualIncome1,Gross Annual Income
+memberGrossAnnualIncome2,Gross Annual Income
+memberGrossAnnualIncome3,Gross Annual Income
+memberGrossAnnualIncome4,Gross Annual Income
+memberGrossAnnualIncome5,Gross Annual Income
+memberName1,Household member's name
+memberName2,Household member's name
+memberName3,Household member's name
+memberName4,Household member's name
+memberName5,Household member's name
+memberRelationship1,Relationship to head of household
+memberRelationship2,Relationship to head of household
+memberRelationship3,Relationship to head of household
+memberRelationship4,Relationship to head of household
+memberRelationship5,Relationship to head of household
+memberRelationship6,Relationship to head of household
+memberSex1,Sex (M/F)
+memberSex2,Sex (M/F)
+memberSex3,Sex (M/F)
+memberSex4,Sex (M/F)
+memberSex5,Sex (M/F)
+memberSex6,Sex (M/F)
+memberSSN1,Social Security Number
+memberSSN2,Social Security Number
+memberSSN3,Social Security Number
+memberSSN4,Social Security Number
+memberSSN5,Social Security Number
+memberSSN6,Social Security Number
+name,Name
+phone,Phone
+sexOffenseDate,Date
+sexOffenseName,Name
+sexOffenseState,State
+specialNeedsDescription,"If yes, please describe"
+state,State
+totalHouseholdAnnualIncome,Total Household Annual Income
+willJoinHabitat,Princeton Habitat for Humanity
+work,Work
+zip,Zip
