@@ -36,11 +36,11 @@ common_fields.flatten!
 
 CSV.open("common_and_specific_fields.csv", "w+") do |csv|
 	csv << ["Common Fields"]
-	csv << common_fields
+	csv << common_fields.uniq
 	specific_fields.keys.each do |k|
 		csv << []
 		csv << []
 		csv << [k]
-		csv << specific_fields[k]
+		csv << specific_fields[k].uniq
 	end
 end
