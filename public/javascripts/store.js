@@ -6,8 +6,8 @@ var store = new Vuex.Store({
   },
 
   mutations: {
-    updateMessage(state, payload){
-      state.message = payload;
+    updateMessage(state, message){
+      state.message = message;
     }
   }
 });

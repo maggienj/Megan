@@ -3,14 +3,23 @@ var memberTable = new Vue({
 
   el: '#memberTable',
 
+  computed: {
+    message(){
+      return this.$store.state.message;
+    }
+  },
+
   methods: {
     updateMessage(e){
+      console.log(e);
       this.$store.commit('updateMessage', e.target.value);
     }
   },
 
   template: `
-    <input :value="message" @input="updateMessage"/>
+    <div>
+    <input :value="message" type="text" @input="updateMessage">
     <h1>{{ message }}</h1>
+    </div>
   `
 });
