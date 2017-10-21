@@ -12,8 +12,11 @@ headers.each do |h|
 end
 
 file_data.slice(1,file_data.count).each do |row|
-	headers.zip(row).each do |h_col|
-		fields[h_col[0]] << (h_col[1].empty? ? nil : h_col[1])
+	row_orig = row
+	row = row + (row.count...headers.count).map {|x| ""}
+	headers.each_with_index do |h, i|
+		col = row[i]
+		fields[h] << (col.nil? | col.empty? ? nil : col)
 	end
 end
 
@@ -25,8 +28,10 @@ real_headers = headers.slice(1, headers.count)
 all_fields = fields[headers[0]].uniq
 common_fields = all_fields
 puts "\n\n\nDETERMINING COMMON FIELDS"
+puts "\n\n\ncommon fields: #{common_fields}"
 real_headers.map do |h|
 	common_fields &= fields[h]
+	puts "\n\n\ncommon fields: #{common_fields}"
 end
 common_fields.flatten!
 
