@@ -9,3 +9,5 @@ router.get('/', function(req, res, next) {
 	console.log("*************");
     res.render('post_eligibility', { title: 'Express' });
 });
+
+module.exports = router;
