@@ -1,0 +1,48 @@
+<% include templates/header.ejs %>
+<main>
+    <article>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="intro-text">
+                            <span class="name">Supply Applicant Information</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Input and save applicant information as a filled-out PDF</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 pull-right">
+                    <figure>
+                        <img class="img img-responsive side-image" style="width:50%; height: 50%;" src="/img/calculator.png">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-7 pull-left">
+                    <p>Fill the below info to check if you are qualified to join the program!</p>
+                    <form action="/qualify" method="POST">
+                        <dl>
+                            <dt><label for="address">Address</label></dt>
+                            <dd><input type="text" id="address" name="address" /></dd>
+
+                            <dt><label for="city">City</label></dt>
+                            <dd><input type="number" id="city" name="city" /></dd>
+
+                            <dt><label for="cell">Cell Phone</label></dt>
+                            <dd><input type="text" id="cell" name="cell" /></dd>
+                            
+                        </dl>
+                        <input class="btn btn-princeton" href="./qualify" type="submit" value="Check My Eligibility">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+  <% include templates/footer.ejs %>

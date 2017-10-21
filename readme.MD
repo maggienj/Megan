@@ -20,7 +20,7 @@ To run the Megan app using Atom as your preferred editor: <br>
 2. Clone your copy of the Megan repository to your dev machine <br>
 3. Make sure you have npm installed on your machine <br>
 4. Install 'express.js' by running <code>npm install express -g</code> inside the /Megan folder from a terminal. <br>
-5. Also inside the /Megan folder, run <code>npm install</code> <br>
+5. Also inside the /Megan folder, run <code>npm install</code> and <code>npm install lodash --save</code><br>
 6. In the same folder, run: <code>node app.js</code> <br>
 7. Open a web browser to <code>http://localhost:8080</code> and start coding!<br>
 <br>

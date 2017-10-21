@@ -10,16 +10,17 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
 var qualify = require('./routes/qualify');
+var post_eligibility = require('./routes/post_eligibility');
 
 var lodash = require('lodash');
 
 var app = express();
 
 // these four lines commented by Maggie on Dec -2 for config testing purposes - for azure portal 
-/*var port = process.env.port || 8080; // 8080 for local or whatever number u want
+var port = process.env.port || 8080; // 8080 for local or whatever number u want
 var listener = app.listen(port, function(){
   console.log('Listening on port ' + port);
-});*/
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -37,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/about', about);
-app.use('/qualify', qualify);
+app.use('/post_eligibility', post_eligibility);
 
 app.get('/process_get', function (req, res) {
   // Prepare output in JSON format
