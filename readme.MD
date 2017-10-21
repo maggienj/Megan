@@ -80,7 +80,17 @@ The next step is to move that section of code to "qualify" page and set that as 
 -- Task#5 -- Once the submit button in "qualify page" is clicked, it should lookup the json file and output the result as "You are eligible for Affordable Housing in Princeton" or .......
 <br>
 ------ Status -- 
-<br> <br>
+<br> 
+
+Tasks for October 2017 Hackathon
+-- Task#6 -- affPDf folder has a few PDF forms.<br>
+Pick up any simple form in that folder and
+then start creating html forms similar to it. <br>
+Create fields in PDF form.
+Populate values from HTML to fields in PDF<br>
+Save pdf in a different folder ... megan/outputPDF 
+<br>
+
 --
 --
 -- Task#99 -- Beautify the layout with bootsrap. Bootstrap css, js and fonts have been downloaded and placed in css, js and fonts directory. Use the Jumbotron wide template for responsive websites. The meta tag has been added to make it as a responsive website to show legibly in all devices. Continue on this and build this as a responsive website..
