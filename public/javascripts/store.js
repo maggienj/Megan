@@ -13,8 +13,8 @@ var store = new Vuex.Store({
   state: {
     forms: [
         {
-          title: 'Contact Information',
-          name: 'contactInfo'
+          name: 'contactInfo',
+          title: 'Contact Information'
         },
         {
           name: 'member',
@@ -110,6 +110,8 @@ var store = new Vuex.Store({
       var activeFields = state.fields.filter(isInActiveApplication);
 
       state.activeFields = activeFields;
+
+      state.activeFields = state.fields;
     }
   },
 
@@ -123,10 +125,17 @@ var store = new Vuex.Store({
 
     fetchFields({ commit }){
       var setFields = (response) =>
-        commit('setFields', response.data);
+        new Promise( (resolve, reject) => {
+          var data = response.data;
+          commit('setFields', data);
+          resolve(data);
+        }
+
+      var updateActiveFields = (
 
       axios.get('/json/application-fields.json')
-      .then(setFields);
+      .then(setFields)
+      .then(updateActiveFields);
     }
   }
 });
