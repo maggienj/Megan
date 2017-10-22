@@ -6,7 +6,7 @@ var lodash = require('lodash');
 /* GET headers page. */
 
 router.get('/', function(req, res, next) {
-	console.log("*************Test");
+	console.log("*************");
     res.render('apply', { title: 'Express' });
 });
 
