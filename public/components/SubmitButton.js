@@ -9,14 +9,13 @@ Vue.component('submit-button', {
   computed: {
     payload(){
       return this.data.reduce((a, b) => {
-        return Object.assign(
-          a,
+        return a.concat(
           {
             name: b.name,
             value: b.value
           }
         );
-      }, {});
+      }, []);
     }
   },
 
@@ -27,10 +26,7 @@ Vue.component('submit-button', {
       var XHR = new XMLHttpRequest();
       var FD  = new FormData();
 
-      // Push our data into our FormData object
-      for(name in data) {
-        FD.append(name, data[name]);
-      }
+      data.forEach( field => FD.append(field.name, field.value) );
 
       // Define what happens on successful data submission
       XHR.addEventListener('load', function(event) {
