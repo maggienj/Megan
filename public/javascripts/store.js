@@ -12,11 +12,26 @@ var model = {
 var store = new Vuex.Store({
   state: {
     forms: [
-        'contactInfo',
-        'member',
-        'finances',
-        'creditHistory',
-        'driversLicense'
+        {
+          title: 'Contact Information',
+          name: 'contactInfo'
+        },
+        {
+          name: 'member',
+          title: 'Household'
+        },
+        {
+          name: 'finances',
+          title: 'Finances'
+        },
+        {
+          name: 'creditHistory',
+          title: 'Credit History'
+        },
+        {
+          name: 'driversLicense',
+          title: 'Drivers License'
+        }
     ],
 
     applications: [
@@ -53,9 +68,8 @@ var store = new Vuex.Store({
 
   getters: {
     fields: (state, getters) => (form) => {
-      var isInForm = (field) => {
-        return field.form === form
-      };
+      var isInForm = (field) =>
+        field.form === form.name;
       
       var fields = state.activeFields.filter(isInForm);
 

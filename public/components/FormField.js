@@ -35,20 +35,25 @@ Vue.component('form-field', {
     }
   },
 
+  computed: {
+    isCheckbox(){
+      return this.type === 'checkbox';
+    }
+  },
+
   template: `
     <div>
-    <dt>
-      <label :for="name">
-        {{ label }}
+      <label v-if="!isCheckbox" :for="name">
+        {{ label }}:
       </label>
-    </dt>
-    <dd>
       <input :type="type"
         :name="name"
         @input="onInput"
         @change="onChange"
       >
-    </dd>
+      <label v-if="isCheckbox" :for="name">
+        {{ label }}
+      </label>
     </div>
   `
 });
