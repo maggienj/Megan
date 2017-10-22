@@ -7,17 +7,7 @@ router.post('/', function(req, res, next) {
 	var fs = require('fs');
 
 	pdfFillForm.write('affPDF/AffordableHousing_Application sales-Fields.pdf',
-		{
-			"name": req.body.name,
-			"address": req.body.address,
-			"state": req.body.state,
-			"city": req.body.city,
-			"zip": req.body.zip,
-			"home": req.body.home,
-			"work": req.body.work,
-			"cell": req.body.cell,
-			"email": req.body.email
-		},
+		req.body,
 		{ "save": "pdf" }
 	 )
 	.then(function(result) {
