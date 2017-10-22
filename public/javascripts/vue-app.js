@@ -1,25 +1,35 @@
-var memberTable = new Vue({
+var app = new Vue({
   store,
 
-  el: '#memberTable',
+  el: '#app',
+
+  created(){
+    this.fetchFields();
+  },
 
   computed: {
-    message(){
-      return this.$store.state.message;
+    forms(){
+      return this.$store.state.forms;
+    },
+    applications(){
+      return this.$store.state.applications;
     }
   },
 
   methods: {
-    updateMessage(e){
-      console.log(e);
-      this.$store.commit('updateMessage', e.target.value);
-    }
-  },
+    getFields(form){
+      return this.$store.getters.fields(form);
+    },
 
-  template: `
-    <div>
-    <input :value="message" type="text" @input="updateMessage">
-    <h1>{{ message }}</h1>
-    </div>
-  `
+    fetchFields(){
+      return this.$store.dispatch('fetchFields');
+    },
+
+    updateApplicationSelection(e){
+      return this.$store.dispatch(
+        'updateApplicationSelections',
+        e.target.name
+      );
+    }
+  }
 });

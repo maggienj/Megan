@@ -1,23 +1,18 @@
+var multer = require('multer');
+
+var upload = multer();
+
 var express = require('express');
 var router = express.Router();
 
 /* GET headers page. */
-router.post('/', function(req, res, next) {
+router.post('/', upload.array(), function(req, res, next) {
   	var pdfFillForm = require('pdf-fill-form');
 	var fs = require('fs');
 
+	console.log(req.body)
 	pdfFillForm.write('affPDF/AffordableHousing_Application sales-Fields.pdf',
-		{
-			"name": req.body.name,
-			"address": req.body.address,
-			"state": req.body.state,
-			"city": req.body.city,
-			"zip": req.body.zip,
-			"home": req.body.home,
-			"work": req.body.work,
-			"cell": req.body.cell,
-			"email": req.body.email
-		},
+		req.body,
 		{ "save": "pdf" }
 	 )
 	.then(function(result) {
