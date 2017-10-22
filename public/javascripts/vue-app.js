@@ -3,6 +3,10 @@ var app = new Vue({
 
   el: '#app',
 
+  created(){
+    this.fetchFields();
+  },
+
   computed: {
     forms(){
       return this.$store.state.forms;
@@ -15,6 +19,10 @@ var app = new Vue({
   methods: {
     getFields(form){
       return this.$store.getters.fields(form);
+    },
+
+    fetchFields(){
+      return this.$store.dispatch('fetchFields');
     },
 
     updateApplicationSelection(e){
