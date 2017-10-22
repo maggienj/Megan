@@ -6,6 +6,7 @@ router.post('/', function(req, res, next) {
   	var pdfFillForm = require('pdf-fill-form');
 	var fs = require('fs');
 
+	console.log(req.body)
 	pdfFillForm.write('affPDF/AffordableHousing_Application sales-Fields.pdf',
 		req.body,
 		{ "save": "pdf" }
