@@ -48,13 +48,15 @@ router.post('/', function (req, res) {
   console.log(maxSalLimit[0]);
 
   if (lodash.toSafeInteger(numSalary) < lodash.toSafeInteger(maxSalLimit[0])) {
-    var decisionStr = "Congratulations! You are eligible to apply for the affordable housing program. Your sum annual salary = " + numSalary + " and the max limit for eligibility = " + maxSalLimit[0];
+    var dec = "Congratulations!";
+    var decisionStr = "You are eligible to apply for the affordable housing program. Your sum annual salary = " + numSalary + " and the max limit for eligibility = " + maxSalLimit[0];
     console.log("Eligible");
-    res.render('decision', { title:express , message: decisionStr });
+    res.render('decision', { title:express , decmessage: dec, message: decisionStr });
   } else {
-     var decisionStr = "Sorry! You are not eligible for the affordable housing program! Your total household annual salary = " + numSalary + " and the max salary limit = " + maxSalLimit[0 ];
+     var dec = "Sorry!";
+     var decisionStr = "You are not eligible for the affordable housing program! Your total household annual salary = " + numSalary + " and the max salary limit = " + maxSalLimit[0 ];
      console.log("Not Elegible");
-    res.render('decision', { title:express , message: decisionStr });
+    res.render('decision', { title:express , decmessage: dec,  message: decisionStr });
   }
 
 
