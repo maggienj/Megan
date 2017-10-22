@@ -6,9 +6,23 @@ Vue.component('submit-button', {
     data: Array
   },
 
+  computed: {
+    payload(){
+      return this.data.reduce((a, b) => {
+        return Object.assign(
+          a,
+          {
+            name: b.name,
+            value: b.value
+          }
+        );
+      }, {});
+    }
+  },
+
   methods: {
     send(){
-      var data = this.data;
+      var data = this.payload;
       var url = this.url;
       var XHR = new XMLHttpRequest();
       var FD  = new FormData();
