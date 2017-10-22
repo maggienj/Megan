@@ -6,9 +6,19 @@
 <script src="/components/EntityTable.js"></script>
 <script src="/components/FormField.js"></script>
 <script src="/components/SubmitButton.js"></script>
+<script src="/components/SelectionTable.js"></script>
 
 <div id="app">
-  <application-form :fields="fields"></application-form>
+  <selection-table
+    :options="applications"
+    :on-change="updateApplicationSelection"
+  >
+  </selection-table>
+  <application-form v-for="(form, i) in forms"
+    :key="i"
+    :title="form"
+    :fields="getFields(form)"
+  ></application-form>
   <submit-button url="/pdf" :data="$store.state.fields">
   </submit-button>
 </div>

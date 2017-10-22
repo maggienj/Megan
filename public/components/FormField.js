@@ -27,6 +27,11 @@ Vue.component('form-field', {
     onInput: {
       type: Function,
       default: () => {}
+    },
+
+    onChange: {
+      type: Function,
+      default: () => {}
     }
   },
 
@@ -38,10 +43,12 @@ Vue.component('form-field', {
       </label>
     </dt>
     <dd>
-      <input :type="type" :value="name" @input="onInput"/>
+      <input :type="type"
+        :name="name"
+        @input="onInput"
+        @change="onChange"
+      >
     </dd>
     </div>
   `
 });
-
-

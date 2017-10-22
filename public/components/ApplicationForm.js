@@ -6,13 +6,7 @@ Vue.component('application-form', {
       type: Array
     },
 
-    applications: {
-      type: Array
-    },
-
-    application: {
-      type: String
-    }
+    title: String
   },
 
   methods: {
@@ -31,7 +25,7 @@ Vue.component('application-form', {
 
   template: `
     <form>
-      <h1>{{ application }}</h1>
+      <h1>{{ title }}</h1>
       <form-field v-for="(field, i) in fields"
         :key="i"
         :label="field.label"
