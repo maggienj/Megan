@@ -14,6 +14,7 @@ var post_eligibility = require('./routes/post_eligibility');
 var pdf = require('./routes/pdf');
 var fillOutPdf = require('./routes/fillOutPdf');
 var vue = require('./routes/vue');
+var apply = require('./routes/apply');
 
 var lodash = require('lodash');
 
@@ -46,6 +47,7 @@ app.use('/pdf', pdf);
 app.use('/fillOutPdf', fillOutPdf);
 app.use('/qualify', qualify);
 app.use('/vue', vue);
+app.use('/apply', apply);
 
 app.get('/process_get', function (req, res) {
   // Prepare output in JSON format

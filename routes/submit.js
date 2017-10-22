@@ -1,7 +1,3 @@
-var multer = require('multer');
-
-var upload = multer();
-
 var express = require('express');
 var router = express.Router();
 
@@ -10,32 +6,26 @@ var fs = require('fs');
 var fields = {};
 
 /* GET headers page. */
-router.post('/', upload.array(), function(req, res, next) {
+router.post('/', function(req, res, next) {
 
 	console.log(req.body)
+	pdfnames = [
+		req.body.selectedApp1,
+		req.body.selectedApp2,
+		req.body.selectedApp3,
+		req.body.selectedApp4
+	]
+	pdfnames.forEach(populatePdf)
 
 });
 
-function getKeys(name, myArray) {
-	myArray.forEach(
-		(dict, i) => {
-			var keys = Object.keys(dict)
-			keys.forEach(
-				(k) => {
-					fields[`{$name}{$k.capitalize}{$i}`] = dict[k]
-			}
-			);
-	}
-	);
-};
-
 function populatePdf(pdfname) {
-	pdfFillForm.write('affPDF/AffordableHousing_Application sales-Fields.pdf',
+	pdfFillForm.write(`affPDF/{$pdfname}`,
 		req.body,
 		{ "save": "pdf" }
 	 )
 	.then(function(result) {
-	    fs.writeFile("affPDF/test123.pdf", result, function(err) {
+	    fs.writeFile(`affPDF/filled-out-{$pdfname}`, result, function(err) {
 	        if(err) {
 	       		return console.log(err);
 	       	}
