@@ -15,6 +15,7 @@ var pdf = require('./routes/pdf');
 var fillOutPdf = require('./routes/fillOutPdf');
 var vue = require('./routes/vue');
 var apply = require('./routes/apply');
+var submit = require('./routes/submit');
 
 var lodash = require('lodash');
 
@@ -48,6 +49,7 @@ app.use('/fillOutPdf', fillOutPdf);
 app.use('/qualify', qualify);
 app.use('/vue', vue);
 app.use('/apply', apply);
+app.use('/submit', submit);
 
 app.get('/process_get', function (req, res) {
   // Prepare output in JSON format
