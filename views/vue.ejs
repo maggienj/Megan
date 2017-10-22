@@ -2,7 +2,16 @@
 <script src="https://unpkg.com/vue"></script>
 <script src="/javascripts/store.js"></script>
 
-<div id="memberTable"></div>
+<script src="/components/ApplicationForm.js"></script>
+<script src="/components/EntityTable.js"></script>
+<script src="/components/FormField.js"></script>
+<script src="/components/SubmitButton.js"></script>
+
+<div id="app">
+  <application-form :fields="fields"></application-form>
+  <submit-button url="/pdf" :data="$store.state.fields">
+  </submit-button>
+</div>
 
 <!-- Vue entry -->
 <script src="/javascripts/vue-app.js"></script>
