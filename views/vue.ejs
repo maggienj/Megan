@@ -17,7 +17,7 @@
   </selection-table>
   <application-form v-for="(form, i) in forms"
     :key="i"
-    :title="form"
+    :title="form.title"
     :fields="getFields(form)"
   ></application-form>
   <submit-button url="/pdf" :data="$store.state.fields">
