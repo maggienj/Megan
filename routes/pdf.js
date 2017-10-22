@@ -1,8 +1,12 @@
+var multer = require('multer');
+
+var upload = multer();
+
 var express = require('express');
 var router = express.Router();
 
 /* GET headers page. */
-router.post('/', function(req, res, next) {
+router.post('/', upload.array(), function(req, res, next) {
   	var pdfFillForm = require('pdf-fill-form');
 	var fs = require('fs');
 
